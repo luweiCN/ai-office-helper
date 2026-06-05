@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 AI办公助手
 
-## Getting Started
+> 用 AI 一键生成专业周报、日报、工作总结。告别加班写汇报，解放你的双手。
 
-First, run the development server:
+## ✨ 功能
+
+- 📋 **周报生成器** — 自动分为"本周完成/进行中/下周计划"
+- 📝 **日报生成器** — 简洁清晰，重点突出
+- 📊 **工作总结** — 概述+成果+反思+规划
+- ⚡ **流式输出** — 实时看到生成过程
+- 🌗 **暗色/亮色主题** — 自动适配系统偏好
+- 🔒 **隐私安全** — API Key 仅存本地浏览器
+- 📱 **移动端适配** — 手机也能用
+
+## 🛠 技术栈
+
+- **Next.js 16** + TypeScript
+- **Tailwind CSS** + shadcn/ui
+- **OpenAI GPT-4o-mini** API
+- **Vercel** 免费部署
+
+## 🚀 快速开始
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/luweiCN/ai-office-helper.git
+cd ai-office-helper
+npm install
+```
+
+### 2. 配置 API Key
+
+启动后在页面右上角输入你的 OpenAI API Key（以 `sk-` 开头），会自动保存到浏览器本地。
+
+> 没有 API Key？去 [platform.openai.com](https://platform.openai.com/api-keys) 注册获取。
+
+### 3. 启动开发
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打开 http://localhost:3000 即可使用。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 部署到 Vercel（免费）
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Fork 本仓库到你自己的 GitHub
+2. 打开 [vercel.com/new](https://vercel.com/new)
+3. 选择你 Fork 的仓库
+4. 点 Deploy，等待完成
+5. 获得一个 `xxx.vercel.app` 的免费域名
 
-## Learn More
+无需配置环境变量，API Key 由用户在页面自行输入。
 
-To learn more about Next.js, take a look at the following resources:
+## 💰 变现思路
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **按次收费**：接入微信/支付宝支付，¥1-2/次
+- **会员制**：¥9.9/月无限使用
+- **定制开发**：帮企业定制内部版，¥500+
+- **卖源码**：作为模板出售给其他开发者
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 开源协议
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License — 可自由使用、修改、转售。
